@@ -1,0 +1,49 @@
+<section>
+  <div class="create-order">
+    <h3>Order</h3>
+
+    <div class="cta-container">
+      <button class="btn">{{ btnTitle | uppercase }}</button>
+    </div>
+  </div>
+</section>
+
+<div class="search-form">
+  <form class="form-container">
+    <div class="search-container">
+      <label class="label-title">What are you looking for?</label>
+      <div class="input-container">
+        <img class="search-icon" [src]="searchIcon" />
+        <input
+          type="text"
+          class="searchInput"
+          placeholder="Search For Category, name, company etc "
+        />
+      </div>
+    </div>
+
+    <div class="category-container">
+      <label class="category-title">Category</label>
+      <select class="list-option">
+        <option value="All">All</option>
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+    </div>
+
+    <div class="status-container">
+      <label class="status-title">Status</label>
+      <select class="status-list">
+        <option value="All">All</option>
+        <option value="Small">Small</option>
+        <option value="Large">Large</option>
+      </select>
+    </div>
+
+    <div class="form-btn">
+      <button class="search-btn">SEARCH</button>
+    </div>
+  </form>
+</div>
+
+<app-orders-table class="table-container"></app-orders-table>
