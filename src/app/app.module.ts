@@ -11,7 +11,15 @@ import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { ProductSummaryComponent } from './components/orders/product-summary/product-summary.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+// import { MatDialogModule, MatDialog } from '@angular/material/dialog';
+// import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 
+// import { MatPaginatorModule } from '@angular/material'
 
 @NgModule({
   declarations: [
@@ -19,6 +27,8 @@ import { MatSortModule } from '@angular/material/sort';
     NavbarComponent,
     OrdersComponent,
     OrdersTableComponent,
+    ProductSummaryComponent,
+    DialogComponent,
   ],
 
   imports: [
@@ -29,6 +39,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatFormFieldModule,
     MatInputModule,
     MatSortModule,
+    MatPaginatorModule,
+    MatDialogModule,
+    MatButtonModule,
   ],
 
   providers: [],

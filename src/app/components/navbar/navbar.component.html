@@ -1,36 +1,43 @@
-<!-- <nav>
-  <div class="title">
-    <p>Dashboards > Orders</p>
-  </div>
-  <div class="nav-menu">
-  
-    <div class="notificationIcon">
-      <img [src]="notificationIcon" alt="" />
-    </div>
-  
-    <div class="profile-style">
-      <div class="profile">
-        <img [src]="imageUrl" alt="" />
-      </div>
-      <div>
-        <p>Samuel Ekuma</p>
-      </div>
-    </div>
-  </div>
-  <div></div>
-</nav> -->
-
 <header>
   <div>
     <p>Dashboards > Orders</p>
   </div>
 
   <div class="nav-menu">
-    <div class="icon">
-      <img [src]="notificationIcon" alt="" />
+    <div class="nav-content">
+      <div class="icon">
+        <img [src]="notificationIcon" alt="" />
+      </div>
+      <div class="profile">
+        <img [src]="imageUrl" alt="" />
+      </div>
+      <h4>Ekuma Samuel</h4>
     </div>
-    <div class="profile">
-      <img [src]="imageUrl" alt="" />
+    <div class="menu-list">
+      <img [src]="menuList" (click)="isClose = false" alt="" />
     </div>
   </div>
 </header>
+
+<!-- Toggle Menu -->
+
+<div *ngIf="!isClose" class="header-menu">
+  <div class="menu-header">
+    <p class="menu-logo-text">Betty Butter</p>
+
+    <div (click)="isClose = !isClose">
+      <!-- <img src="assets/Icons/close-btn.png" /> -->
+    </div>
+  </div>
+
+  <div class="NavListItem">
+    <ul class="nav-lists">
+      <li class="home" (click)="isClose = true">
+        <a href="#home">Home</a>
+      </li>
+      <li class="about" (click)="isClose = true">
+        <a href="#about">About</a>
+      </li>
+    </ul>
+  </div>
+</div>

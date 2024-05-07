@@ -3,7 +3,8 @@
     <h3>Order</h3>
 
     <div class="cta-container">
-      <button class="btn">{{ btnTitle | uppercase }}</button>
+      <!-- <button mat-button (click)="openDialog() class="btn" >{{ btnTitle | uppercase }}</button> -->
+      <button class="btn" >{{ btnTitle | uppercase }}</button>
     </div>
   </div>
 </section>
@@ -44,6 +45,5 @@
       <button class="search-btn">SEARCH</button>
     </div>
   </form>
+  <app-orders-table></app-orders-table>
 </div>
-
-<app-orders-table class="table-container"></app-orders-table>

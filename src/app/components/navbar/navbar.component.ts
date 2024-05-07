@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   imageUrl: string = 'assets/Images/Profile-Image.png';
-  notificationIcon: string = "/assets/Icons/notification-icon.png";
+  notificationIcon: string = '/assets/Icons/notification-icon.png';
+  menuList: string = '/assets/Icons/menu-icon.svg';
+  isClose = true;
 }
